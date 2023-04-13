@@ -22,7 +22,7 @@ class SupportUs extends StatelessWidget {
     const Icon(
       Icons.favorite_border,
       size: 50.0,
-      color: Colors.red,
+      color: Colors.black,
     ),
     const SizedBox(height: 20.0),
      const Padding(
@@ -40,10 +40,8 @@ class SupportUs extends StatelessWidget {
     Row(mainAxisAlignment: MainAxisAlignment.center,children: [
 
       ElevatedButton(
-      style:ElevatedButton.styleFrom(backgroundColor: Colors.green),
-      onPressed: () {
-        // Bağış yapma sayfasına yönlendirme işlemleri
-      },
+      style:ElevatedButton.styleFrom(backgroundColor: Colors.black),
+      onPressed: () {      },
       child: const Text(
         'Bağış Yap',
         style: TextStyle(
@@ -53,9 +51,9 @@ class SupportUs extends StatelessWidget {
     ),
     const SizedBox(width: 10),
     ElevatedButton(
-      style:ElevatedButton.styleFrom(backgroundColor: Colors.green),
+      style:ElevatedButton.styleFrom(backgroundColor: Colors.black),
       onPressed: () {
-        // Uygulama paylaşım işlemleri
+
       },
       child: const Text(
         'Uygulamayı Paylaş',

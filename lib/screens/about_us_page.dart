@@ -25,7 +25,7 @@ class AboutUs extends StatelessWidget {
     const SizedBox(height: 20.0),
     const SizedBox(height: 20.0),
     const Text(
-      'Bu uygulama, kullanıcıların XYZ ile ilgili ABC yapmasına olanak tanır. Uygulamamız hakkında daha fazla bilgi edinmek için aşağıdaki bilgilere göz atın.',
+      'Bu uygulama, Mobil Programlama dersi için geliştirilmiştir.',
       textAlign: TextAlign.center,
       style: TextStyle(
         fontSize: 18.0,
@@ -38,23 +38,17 @@ class AboutUs extends StatelessWidget {
         children: const <Widget>[
           ListTile(
             leading: Icon(Icons.person),
-            title: Text('Jane Doe'),
+            title: Text('Mehmet Ali Kuyucu'),
             subtitle: Text('Geliştirici'),
           ),
-          Divider(),
-          ListTile(
-            leading: Icon(Icons.person),
-            title: Text('John Doe'),
-            subtitle: Text('Tasarımcı'),
-          ),
+
         ],
       ),
     ),
     const SizedBox(height: 20.0),
     ElevatedButton(
-      style:ElevatedButton.styleFrom(backgroundColor: Colors.green),
+      style:ElevatedButton.styleFrom(backgroundColor: Colors.black),
       onPressed: () {
-        // Uygulama indirme işlemleri
       },
       child: const Text(
         'Uygulamayı İndir',
