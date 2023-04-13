@@ -18,18 +18,19 @@ class Detail extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
               child: Text(
                 designPattern.content,
-                style: const TextStyle(height: 1.5, color: Colors.black),
+                style: const TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
-            ElevatedButton(
+            SizedBox(height: 20,),
+            TextButton(
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => DartCodePage(indx: indx,)));
                 },
-                child: Text("Show ${designPattern.title} Code"))
+                child: Text("Show ${designPattern.title} Code",style: TextStyle(color: Colors.black,fontSize: 18,decoration:TextDecoration.underline  ),))
           ],
         ),
       ),

@@ -6,6 +6,7 @@ class PageAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor:Colors.black ,
       leading: IconButton(
         icon: const Icon(Icons.arrow_back),
         onPressed: () {
@@ -13,6 +14,10 @@ class PageAppbar extends StatelessWidget implements PreferredSizeWidget {
         },
       ),
       title: Text(title),
+      centerTitle: true,
+      actions: [
+        IconButton(onPressed: (){}, icon: const Icon(Icons.favorite_border))
+      ],
     );
   }
 
